@@ -1,0 +1,22 @@
+# 换行统一：脚本必须 LF，否则在 Linux/macOS 上执行会报 $'\r': command not found
+* text=auto eol=lf
+*.sh   text eol=lf
+*.py   text eol=lf
+*.mjs  text eol=lf
+*.ets  text eol=lf
+*.ts   text eol=lf
+*.json text eol=lf
+*.json5 text eol=lf
+*.md   text eol=lf
+*.sql  text eol=lf
+# Windows 批处理必须 CRLF
+*.cmd  text eol=crlf
+*.bat  text eol=crlf
+# 二进制
+*.hap binary
+*.p12 binary
+*.p7b binary
+*.cer binary
+*.docx binary
+*.png binary
+*.jpg binary
