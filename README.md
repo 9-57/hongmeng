@@ -24,15 +24,22 @@
 ### 路线 A：真机 / 网络正常
 
 ```cmd
-tools\run.cmd -All                        :: 已连接的全部设备各装一遍
-tools\run.cmd -Device 127.0.0.1:5555      :: 只装指定那台
+tools\run.cmd -All
 ```
+
+```cmd
+tools\run.cmd -Device 127.0.0.1:5555
+```
+
+（第一条装已连接的全部设备，第二条只装指定那台。）
 
 ### 路线 B：本机模拟器（需要一条本机中转）
 
 ```cmd
-tools\dev-proxy.cmd on        :: 起代理 + 把 SUPABASE_URL 切到 http://10.0.2.2:8787 + 重装
+tools\dev-proxy.cmd on
 ```
+
+这一条会：起本机代理 → 把 `SUPABASE_URL` 改成 `http://10.0.2.2:8787` → 重新构建并安装。
 
 成功时会打印：
 
@@ -70,9 +77,10 @@ tools\dev-proxy.cmd on        :: 起代理 + 把 SUPABASE_URL 切到 http://10.0
 ### 演示完记得还原
 
 ```cmd
-tools\dev-proxy.cmd off       :: 地址改回 https://hfumlfksryyzaebiuaca.supabase.co 并重装
+tools\dev-proxy.cmd off
 ```
 
+停代理、把地址改回 `https://hfumlfksryyzaebiuaca.supabase.co` 并重装。
 不还原的话，代码里留的是 `http://10.0.2.2:8787`，这份包换台电脑就跑不通了。
 
 ---
