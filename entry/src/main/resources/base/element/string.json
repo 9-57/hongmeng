@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "碳足迹 · 全民绿色生活碳积分与减排指南"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "记录低碳行为，量化减排贡献，养成绿色生活习惯"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "碳足迹"
+    }
+  ]
+}

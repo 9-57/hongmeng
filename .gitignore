@@ -1,0 +1,19 @@
+/node_modules
+/oh_modules
+/local.properties
+/.idea
+**/build
+/.hvigor
+.cxx
+/.clangd
+/.clang-format
+/.clang-tidy
+**/.test
+/.appanalyzer
+/dist
+/out
+
+# 本地联调产物（模拟器 DNS 故障时用，见 README 第零节）
+/tools/dev-proxy.log
+/tools/dev-proxy.err.log
+.dev-proxy.pid
